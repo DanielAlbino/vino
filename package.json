@@ -1,0 +1,33 @@
+{
+  "name": "vino",
+  "version": "0.0.1",
+  "description": "Modern CSS Framework",
+  "author": "Daniel Albino",
+  "license": "MIT",
+  "main": "vino.sass",
+  "unpkg": "vino.css",
+  "style": "vino/css/vino.min.css",
+  "scripts": {
+    "build-css": "node-sass --include-path scss sass/main.scss css/vino.css",
+    "start": "npm run build-css --watch"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "flexbox",
+    "responsive",
+    "framework"
+  ],
+  "dependencies": {
+    "autoprefixer": "^10.4.2",
+    "clean-css-cli": "^5.5.2",
+    "node-sass": "^7.0.1"
+  },
+  "files": [
+    "css",
+    "sass",
+    "vino.sass",
+    "LICENSE",
+    "README.md"
+  ]
+}

@@ -1,0 +1,48 @@
+@import url('./colors.scss');
+@import url('./button.scss');
+@import url('./input.scss');
+@import url('./modal.scss');
+@import url('./box.scss');
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.d-primary{
+    background-color: $primary !important;
+
+    &:hover{
+        background-color: $primaryFocus !important;
+    }
+
+    &:active{
+        box-shadow:0px 0px 5px 5px $boxShadow inset !important; 
+        background-color: $primaryFocus !important;
+    }
+}
+
+.d-danger{
+    background-color: $danger !important;
+
+    &:hover{
+        background-color: $dangerFocus !important;
+    }
+
+    &:active{
+        box-shadow:0px 0px 5px 5px $boxShadow inset !important; 
+        background-color: $dangerFocus  !important;
+    }
+}
+
+.d-warning{
+    background-color: $warning !important;
+
+    &:hover{
+        background-color: $warningFocus !important;
+    }
+
+    &:active{
+        box-shadow:0px 0px 5px 5px $boxShadow inset !important; 
+        background-color: $warningFocus  !important;
+    }
+}

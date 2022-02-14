@@ -1,0 +1,22 @@
+@import url('./colors.scss');
+.d-btn {
+    width:100px;
+    height: 30px;   
+    border-radius: 5px;
+    padding: auto;
+    text-align: center;
+    padding-top: 13px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    background-color: $default;
+
+    &:hover {
+        background-color: $defaultFocus;
+    }
+
+    &:active {
+        box-shadow:0px 0px 5px 5px $boxShadow inset; 
+        background-color: $defaultFocus;
+    }
+}
