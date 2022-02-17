@@ -8,8 +8,9 @@
   "unpkg": "vino.css",
   "style": "vino/css/vino.min.css",
   "scripts": {
-    "build-css": "node-sass --include-path scss sass/main.scss css/vino.css",
-    "start": "npm run build-css --watch"
+    "build:css": " node ./src/uglify.js",
+    "sass:watch": " cls && sass --watch sass/vino.scss:dist/vino/css/vino.min.css "
+
   },
   "keywords": [
     "css",
@@ -21,7 +22,9 @@
   "dependencies": {
     "autoprefixer": "^10.4.2",
     "clean-css-cli": "^5.5.2",
-    "node-sass": "^7.0.1"
+    "gulp": "^4.0.2",
+    "sass": "^1.49.7",
+    "uglifycss": "^0.0.29"
   },
   "files": [
     "css",
@@ -29,5 +32,9 @@
     "vino.sass",
     "LICENSE",
     "README.md"
-  ]
+  ],
+  "devDependencies": {
+    "gulp-sass": "^5.1.0",
+    "node-sass": "^7.0.1"
+  }
 }

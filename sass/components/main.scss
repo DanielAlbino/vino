@@ -1,0 +1,98 @@
+@use '../abstracts/' as *;
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.v-transparent {
+    color: $primary !important;
+    text-decoration: underline !important;
+    background-color: transparent !important;
+    &:hover{
+        color: $primaryPressed!important;  
+    }
+}
+
+.v-primary{
+  
+    &.v-input {
+        background-color: $box !important;
+        border: 2px solid $primary !important;
+        box-shadow: 0px 0px 2px $primary;
+    }
+
+    &.v-btn {
+        background-color: $primary !important;
+
+        &:hover{
+            background-color: $primaryFocus !important;
+        }
+    
+        &:active{
+            box-shadow:0px 0px 5px 5px $primaryPressed inset !important; 
+        }
+
+    }
+
+   
+}
+
+.v-danger{
+    &.v-input {
+        background-color: $box !important;
+        border: 2px solid $danger !important;
+        box-shadow: 0px 0px 2px $danger;
+    }
+
+    &.v-btn {
+        background-color: $danger !important;
+
+        &:hover{
+            background-color: $dangerFocus !important;
+        }
+    
+        &:active{
+            box-shadow:0px 0px 5px 5px $dangerPressed inset !important; 
+        }
+    }
+}
+
+.v-warning{
+    &.v-input {
+        background-color: $box !important;
+        border: 2px solid $warning !important;
+        box-shadow: 0px 0px 2px $warning;
+    }
+
+    &.v-btn {
+        background-color: $warning !important;
+
+        &:hover{
+            background-color: $warningFocus !important;
+        }
+    
+        &:active{
+            box-shadow:0px 0px 5px 5px $warningPressed inset !important; 
+        }
+    }
+}
+
+.v-success{
+    &.v-input {
+        background-color: $box !important;
+        border: 2px solid $success !important;
+        box-shadow: 0px 0px 2px $success;
+    }
+
+    &.v-btn {
+        background-color: $success !important;
+
+        &:hover{
+            background-color: $successFocus !important;
+        }
+    
+        &:active{
+            box-shadow:0px 0px 5px 5px $successPressed inset !important; 
+        }
+    }
+}

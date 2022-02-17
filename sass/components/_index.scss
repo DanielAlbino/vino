@@ -1,0 +1,7 @@
+@use '../abstracts/' as * ;
+
+@forward './main.scss';
+@forward './button.scss';
+@forward './input.scss';
+@forward './modal.scss';
+@forward './box.scss';
